@@ -42,7 +42,6 @@ window.addEventListener("load", () => {
       // parent.remove();
 
       const sibling = parent.children[1];
-      console.log(sibling);
       sibling.classList.toggle("cross-out");
     }
   });
@@ -52,14 +51,12 @@ window.addEventListener("load", () => {
     e.preventDefault();
     const list = document.getElementById("theList");
     const checkboxes = document.querySelectorAll(".theCheck");
-    console.log(checkboxes);
+
     const nodeArray = Array.from(checkboxes);
     let isChecked = [];
     for (let i = 0; i < nodeArray.length; i++) {
       isChecked.push(nodeArray[i].checked);
     }
-    console.log(nodeArray);
-    console.log(isChecked);
 
     const shoppingData = {
       items: list.innerHTML,
@@ -67,8 +64,6 @@ window.addEventListener("load", () => {
       state: isChecked,
     };
     const jsonStr = JSON.stringify(shoppingData);
-    console.log(jsonStr);
-    console.log(shoppingData);
     localStorage.setItem("data", jsonStr);
   });
   const restorePage = () => {
