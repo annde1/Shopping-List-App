@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #c9d6ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e2e2e2,
+    #c9d6ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e2e2e2,
+    #c9d6ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Montserrat", sans-serif;
+}
+.the-heading {
+  font-weight: 600;
+}
+.cross-out {
+  text-decoration: line-through;
+}
+.myContainer {
+  max-width: 60%;
+  /* border: 1px solid black; */
+}
+.btn {
+  padding-left: 3em;
+  padding-right: 3em;
+}
+.theCheck {
+  font-size: 1.3em;
+}
+.theLabel {
+  font-size: 1.3em;
+}
+.form-check {
+  margin-left: 0.5em;
+}
+.sum {
+  font-weight: 600;
+}
+.hidden {
+  display: none;
+}
